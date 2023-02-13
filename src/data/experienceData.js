@@ -1,23 +1,23 @@
 export const experienceData = [
-    {
-        id: 1,
-        company: 'Teton Private Limited',
-        jobtitle: 'Software Engineer I',
-        startYear: 'Jan 2022',
-        endYear: 'Present'
-    },
-    {
-        id: 2,
-        company: 'Fiverr(freelance)',
-        jobtitle: 'Full-Stack Developer',
-        startYear: 'Jun 2021',
-        endYear: 'Jan 2022'
-    },
-    {
-        id: 3,
-        company: 'Learning New Technology For Everyday',
-        jobtitle: 'Self Learning',
-        startYear: '2018',
-        endYear: 'Present'
-    },
-]
+  {
+    id: 1,
+    company: 'White Citadel',
+    jobtitle: 'Junior Frontend Developer',
+    startYear: 'july 2021',
+    endYear: 'Present',
+  },
+  {
+    id: 2,
+    company: 'Adecore',
+    jobtitle: 'Trainee Frontend Developer',
+    startYear: 'january 2021',
+    endYear: 'june 2021',
+  },
+  {
+    id: 3,
+    company: 'Upwork',
+    jobtitle: 'Freelance React Developer',
+    startYear: '2021',
+    endYear: 'Present',
+  },
+];
