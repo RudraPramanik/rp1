@@ -5,7 +5,6 @@ import isEmail from 'validator/lib/isEmail';
 import { ThemeContext } from '../../contexts/theme-context';
 import ContactUI from '../core-ui/contacts/contacts-ui';
 
-
 const Contacts = () => {
   const [open, setOpen] = useState(false);
 
@@ -107,24 +106,32 @@ const Contacts = () => {
 
   const classes = useStyles();
 
-
   const handleContactForm = (e) => {
     e.preventDefault();
 
     if (name && email && message) {
       if (isEmail(email)) {
-        emailjs.sendForm(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, process.env.REACT_APP_YOUR_PUBLIC_KEY)
-          .then((result) => {
-            console.log('success');
-            setSuccess(true);
-            setErrMsg('');
-            setName('');
-            setEmail('');
-            setMessage('');
-            setOpen(false);
-          }, (error) => {
-            console.log(error.text);
-          });
+        emailjs
+          .sendForm(
+            process.env.REACT_APP_YOUR_SERVICE_ID,
+            process.env.REACT_APP_YOUR_TEMPLATE_ID,
+            form.current,
+            process.env.REACT_APP_YOUR_PUBLIC_KEY
+          )
+          .then(
+            (result) => {
+              console.log('success');
+              setSuccess(true);
+              setErrMsg('');
+              setName('');
+              setEmail('');
+              setMessage('');
+              setOpen(false);
+            },
+            (error) => {
+              console.log(error.text);
+            }
+          );
       } else {
         setErrMsg('Invalid email');
         setOpen(true);

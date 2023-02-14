@@ -11,10 +11,10 @@ const Projects = () => {
       color: theme.secondary,
       backgroundColor: theme.buttonColor,
       transition: 'color 0.5s',
-      "&:hover": {
+      '&:hover': {
         color: theme.secondary,
         backgroundColor: theme.primary,
-      }
+      },
     },
     viewArr: {
       color: theme.buttonColor,
@@ -26,10 +26,10 @@ const Projects = () => {
       borderRadius: '50%',
       cursor: 'pointer',
       transition: 'background-color 0.5s',
-      "&:hover": {
+      '&:hover': {
         color: theme.buttonColor,
         backgroundColor: theme.secondary,
-      }
+      },
     },
   }));
 

@@ -26,7 +26,7 @@
   margin-top: 2rem;
 }
 
-.contacts--container>h1 {
+.contacts--container > h1 {
   font-family: var(--primaryFont);
   font-size: 2.5rem;
   margin-bottom: 2.5rem;
@@ -184,7 +184,7 @@
     margin-top: 1rem;
   }
 
-  .contacts--container>h1 {
+  .contacts--container > h1 {
     font-size: 3rem;
     margin: 0 0 1.2rem 0;
   }
@@ -260,6 +260,9 @@
     flex: 1;
     width: 100%;
   }
+  .mr {
+    margin-right: 40px;
+  }
 
   .contacts--container h1 {
     font-size: 2.5rem;
@@ -305,7 +308,6 @@
 }
 
 @keyframes fly {
-
   /* 0%,100%{
         transform: translate(5px,-3px) rotate(-30deg);
         opacity: 1;

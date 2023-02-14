@@ -163,4 +163,7 @@
   .experience-description > h1 {
     font-size: 2.5rem;
   }
+  .mr {
+    margin-right: 40px;
+  }
 }

@@ -103,7 +103,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: "var(--primaryFont)", sans-serif;
+  font-family: 'var(--primaryFont)', sans-serif;
 }
 
 @media (max-width: 1100px) {
@@ -165,6 +165,9 @@
 }
 
 @media (max-width: 600px) {
+  .mr {
+    margin-right: 40px;
+  }
   .landing--container {
     flex-direction: column;
     justify-content: space-between;

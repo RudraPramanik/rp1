@@ -3,6 +3,7 @@ import { HashLink as NavLink } from 'react-router-hash-link';
 import Typed from 'react-typed';
 import { headerData } from '../../../data/headerData';
 import './landing.css';
+import rudra from '../../../assets/rudra.png';
 
 import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { contactsData } from '../../../data/contactsData';
@@ -10,7 +11,7 @@ import { contactsData } from '../../../data/contactsData';
 function LandingUI({ theme, drawerOpen, classes }) {
   return (
     <div className="landing" style={{ backgroundColor: theme.quaternary }}>
-      <div className="landing--container">
+      <div className="landing--container mr ">
         <div
           className="landing--container-left"
           style={{ backgroundColor: theme.quaternary }}
@@ -55,7 +56,7 @@ function LandingUI({ theme, drawerOpen, classes }) {
           </div>
         </div>
         <img
-          src={headerData.image}
+          src={rudra}
           alt=""
           className="landing--img"
           style={{

@@ -64,6 +64,11 @@
   cursor: pointer;
 }
 
+.project-grid {
+  display: flex;
+  gap: 4rem;
+}
+
 @media screen and (max-width: 992px) {
   .projects--bodyContainer {
     display: flex;
@@ -72,12 +77,18 @@
     justify-content: center;
     width: 100%;
   }
+  .project-grid {
+    gap: 3rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
   .projects--header h1 {
     font-size: 3rem;
     margin-bottom: 30px;
+  }
+  .mr {
+    margin-right: 35px;
   }
 }
 

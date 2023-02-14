@@ -55,9 +55,7 @@ const Landing = () => {
 
   const classes = useStyles();
 
-  return (
-    <LandingUI drawerOpen={drawerOpen} theme={theme} classes={classes} />
-  );
+  return <LandingUI drawerOpen={drawerOpen} theme={theme} classes={classes} />;
 };
 
 export default Landing;
