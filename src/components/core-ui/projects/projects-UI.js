@@ -11,7 +11,7 @@ function ProjectsUI({ theme, classes }) {
     <>
       {projectsData.length > 0 && (
         <div
-          className="projects mr "
+          className="projects"
           id="projects"
           style={{ backgroundColor: theme.secondary }}
         >
@@ -20,7 +20,7 @@ function ProjectsUI({ theme, classes }) {
           </div>
           <div className="projects--body">
             <div className="projects--bodyContainer">
-              <div className="project-container">
+              <div className="project-container mr">
                 <Grid
                   className="project-grid"
                   container
